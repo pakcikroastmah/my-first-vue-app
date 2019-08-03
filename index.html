@@ -1,0 +1,27 @@
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+           
+           <input v-model="message">
+           hello im {{ message }}, this is my first time in vue
+
+           <ul>
+               <li v-for=" food in food_items"> {{ food }}</li>
+           </ul>
+
+           <button v-on:click="buttonClick">Click Me</button>
+
+           <span v-if="seen">Now you see me</span>
+        </div>
+        
+        <script src="index.js">
+        </script>
+    </body>
+</html>
